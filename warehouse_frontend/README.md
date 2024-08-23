@@ -1,3 +1,42 @@
+# Directory Structure
+warehouse-frontend/
+│
+├── public/
+│
+├── src/
+│   ├── assets/               # Static assets like images, icons, etc.
+│   ├── components/           # Shared components used across modules
+│   ├── modules/              # Feature-specific modules
+│   │   ├── order/            # Order Management Module
+│   │   │   ├── components/   # Components specific to Order Management
+│   │   │   ├── pages/        # Pages for Order Management
+│   │   │   ├── orderSlice.js # Redux slice for Order Management
+│   │   │   └── index.js      # Entry point for Order Management module
+│   │   ├── production/       # Production Management Module
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   ├── productionSlice.js
+│   │   │   └── index.js
+│   │   ├── inventory/        # Inventory Management Module
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   ├── inventorySlice.js
+│   │   │   └── index.js
+│   │   ├── procurement/      # Procurement Module
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   ├── procurementSlice.js
+│   │   │   └── index.js
+│   │   └── ...               # Add other modules similarly
+│   ├── services/             # API services for interacting with backend
+│   ├── store/                # Redux store configuration
+│   │   └── index.js
+│   ├── App.js                # Main application component
+│   ├── index.js              # Entry point of the React app
+│   └── routes.js             # Application routes
+└── package.json
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
